@@ -36,14 +36,13 @@
                     <div class="bccbodyhometemplatecontent">
                         <div class="tabbable"> <!-- Only required for left/right tabs -->
                             <ul class="nav nav-tabs">
-                                <li class="active"><a href="#tab1" data-toggle="tab" class="ready_template">Ready Template</a></li>
-                                <li><a href="#tab2" data-toggle="tab" class="blank_template">Blank Template</a></li>
+                                <li class="active"><a href="#tab1" data-toggle="tab">Ready Template</a></li>
+                                <li><a href="#tab2" data-toggle="tab">Blank Template</a></li>
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane active" id="tab1" style="width:2440px;overflow:hidden;">
                                 	<div class="choose_color_template">
                                     	Choose Color&nbsp;&nbsp;<i class="color_block color_block_blue active"></i> <i class="icon-chevron-down"></i>
-                                        						<input type="hidden" name="active_color_val" value="color_block_blue" />
                                         <div class="choose_others_color_template hide">
                                             <i class="color_block color_block_red"></i>
                                             <i class="color_block color_block_dark_gray"></i>
@@ -87,7 +86,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p style="margin:10px 0;"><button class="btn btn-warning" onclick="goto_bcceditor();">Create Site</button></p>
+                        <p style="margin:10px 0;"><button class="btn btn-warning" onclick="window.location='index.html'">Create Site</button></p>
                     </div><!-- End bccbodyhometemplatecontent -->
                 </div>
             </div>
@@ -131,8 +130,7 @@ $(document).ready(function(){
 		};
 		var color_choosed = $(this).attr("class").replace(/(\w+)/g, function(s, key) {return reps[key] || s;}).trim();
 		var color_actived = $(".color_block.active").attr("class").replace(/(\w+)/g, function(s, key) {return reps[key] || s;}).trim();
-		$("input[name='active_color_val']").val(" ");
-		$("input[name='active_color_val']").val(""+color_choosed+"");
+		//console.log(">>>>>>>>>>>>>" + color_choosed + " >>>>>>>>>>>>>" + color_actived);
 		$(".color_block.active").removeClass(""+color_actived+"").addClass(""+color_choosed+"");
 		
 		function onSuccess(data, status){
@@ -155,18 +153,7 @@ $(document).ready(function(){
 		});
 		$.ajaxSetup({async: true});
 	});
-	
 });
-function goto_bcceditor() {
-	var template_type = $(".bccbodyhometemplatecontent .tabbable .nav-tabs li.active a").attr("class");
-	var template_ready_color = $("input[name='active_color_val']").val().replace("color_block_","");
-	if ( template_type == "blank_template" ) {
-		template_ready_color = "";
-	} else {
-		template_ready_color = "&template_ready_color="+template_ready_color;
-	}
-	return window.location='index.html?template_type='+template_type+template_ready_color;	
-}
 </script>
 </body>
 </html>

@@ -8,8 +8,12 @@ please contact me:<br />
 islamzatary@gmail.com
 <br />
 My Blog: http://www.islamzatary.com/<br /><br /> 
+Template Selector<br />
+http://www.islamzatary.com/Template-Generator/template_selector.html<br />
 Demo link:<br /> 
 http://www.islamzatary.com/Template-Generator/
+<br />
+
 
 
 
