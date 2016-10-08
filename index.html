@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="img/favicon.ico" />
+<link type="text/css" rel="stylesheet" href="css/bootstrap.css" media="all"/>
+<link type="text/css" rel="stylesheet" href="css/style.css" media="all"/>
+<link type="text/css" rel="stylesheet" href="css/wColorPicker.css" media="all"/>
+<link type="text/css" rel="stylesheet" href="css/jqueryUI/jquery-ui-1.8.22.custom.css" media="all"/>
+<script src="js/jquery.v1.7.1.js" type="text/javascript" language="javascript"></script>
+<title>BCC Editor</title>
+</head>
+<body id="en">
+	<div id="bccwrap">
+    	<div id="bccheader">
+        	<div class="l">
+            	<span id="bcclogo" class="l"></span>
+                <ul class="menu-h l">
+                	<li><a data-toggle="modal" href="#myModal">Insert Widget</a></li>
+                	<li><a href="#">Site Settings</a></li>
+                </ul>
+            </div>
+            <div class="r">
+            	<a href="javascript:;" title="View FullScreen" class="btn fullscreen"><i class="icon-fullscreen"></i> View FullScreen</a>
+            	<button class="btn">Preview</button>
+                <button class="btn btn-warning">Save</button>
+                <button class="btn btn-warning">Publish to Production</button>
+            </div>
+        </div>
+        <div id="bcctoolbox" class="l">
+        	<h3 class="bcctoolboxtitle">
+            	Toolbox
+                <span class="bcctoolbox-col-exp r">
+                	<i class="icon-chevron-left icon-white bcctoolboxtoggle"></i>
+                </span>
+            </h3>
+            <div id="bccwidgetlist">
+            	<h4 class="title_free_toggle">
+                	<span class="l">
+                        <i class="icon-chevron-down"></i>
+                    </span>
+                	Insert Widget
+                </h4>
+                <div class="bccblockcontent">
+                	<ul class="bccwidgetlinks">
+                    	<li><a data-toggle="modal" href="#myModal">Login</a></li>
+                        <li>Navtabs</li>
+                        <li>Search Box</li>
+                        <li>Polls</li>
+                        <li>Latest Jobs</li>
+                        <li>Jobs of the Week</li>
+                        <li>MPU Ad Banner</li>
+                        <li>Image </li>
+                        <li>Languages </li>
+                        <li>Video box </li>
+                        <li>Flash box </li>
+                        <li>Hyberlink </li>
+                        <li>RSS reader </li>
+                        <li>Social Widget </li>
+                        <li>Jobs Nav </li>
+                    </ul>
+                </div>
+            </div>
+		</div>
+        <div id="bccbody" class="bccbody_editor">
+        	<h3 class="bccgradienthdr"></h3>
+            <div style="min-width:990px;overflow-x:auto;"><!--<iframe align="top" width="100%" height="650px" src="http://bayt.com"></iframe>--></div>
+        </div>
+         <div id="bccproperties" class="r">
+        	<h3 class="bccgradienthdr">
+            	<span>
+                	<i class="icon-chevron-down icon-white bccexpandecollapse"></i>
+                </span>
+                Site Explorer
+            </h3>
+            <div class="bccblockcontent">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div>
+            <h3 class="bccgradienthdr">
+            	<span>
+                	<i class="icon-chevron-down icon-white bccexpandecollapse"></i>
+                </span>
+                Current Selection
+            </h3>
+            <div class="bccblockcontent">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            </div>
+            <h3 class="bccgradienthdr">
+            	<span>
+                	<i class="icon-chevron-down icon-white bccexpandecollapse"></i>
+                </span>
+                Site Properties
+            </h3>
+            <div class="bccblockcontent">
+					<div class="bccsitepropertiescontainer">
+                    	<fieldset class="bccsitepropertiesblock">
+                        	<div>
+                            	<h4>Site Width</h4>
+                                <p>
+                                	<input type="text" name="width" value="0" maxlength="3">
+                                	<select name="width_unit">
+                                        <option value="px">px</option>
+                                        <option value="%">%</option>
+                                    </select>
+                                </p>
+                            </div>
+                            <div>
+                            	<h4>Site Position</h4>
+                                <p class="bccsitepropertiespositionalign">
+                                	<span class="bccsiteposition">
+                                        <span class="left">L</span>
+                                        <span class="on center">C</span>
+                                        <span class="right">R</span>
+                                    </span>
+                                </p>
+                            </div>
+                            <div>
+                            	<h4>Site Layout</h4>
+                                <p></p>
+                            </div>
+                            <div>
+                            	<h4>Background</h4>
+                                <p>
+                                	<a href="#myModal" title="Edit" class="bcciconbg bccstylemodalproperties" data-toggle="modal" data-modaloption="background">
+                                    	<i class="icon-pencil"></i>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="rows2">
+                            	<h4>Default Text <a href="#myModal" title="Edit" class="bcciconbg bccstylemodalproperties" data-toggle="modal" data-modaloption="font layout_dimension"><i class="icon-pencil"></i></a></h4>
+                                <div>Sample Default Text</div>
+                            </div>
+                            <div class="rows2">
+                            	<h4>Important Text <a href="#myModal" title="Edit" class="bcciconbg bccstylemodalproperties" data-toggle="modal"><i class="icon-pencil"></i></a></h4>
+                                <div>Sample Important Text</div>
+                            </div>
+                            <div class="rows2">
+                            	<h4>Mute Text <a href="#myModal" title="Edit" class="bcciconbg bccstylemodalproperties" data-toggle="modal"><i class="icon-pencil"></i></a></h4>
+                                <div>Sample Mute	 Text</div>
+                            </div>
+                            <div class="rows2">
+                            	<h4>Heading 1 <a href="#myModal" title="Edit" class="bcciconbg bccstylemodalproperties" data-toggle="modal"><i class="icon-pencil"></i></a></h4>
+                                <div><h1>Sample Heading 1</h1></div>
+                            </div>
+                            <div class="rows2">
+                            	<h4>Heading 2 <a href="#myModal" title="Edit" class="bcciconbg bccstylemodalproperties" data-toggle="modal"><i class="icon-pencil"></i></a></h4>
+                                <div><h2>Sample Heading 2</h2></div>
+                            </div>
+                            <div class="rows2">
+                            	<h4>Heading 3 <a href="#myModal" title="Edit" class="bcciconbg bccstylemodalproperties" data-toggle="modal"><i class="icon-pencil"></i></a></h4>
+                                <div><h3>Sample Heading 3</h3></div>
+                            </div>
+                        </fieldset>
+                    </div>
+            </div>
+		</div>
+    </div>
+    <!-- Modal -->
+    <div class="modal hide" id="myModal">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h3>Modal header</h3>
+        </div>
+        <div class="modal-body">
+            <div class="tabbable tabs-left">
+                <ul class="nav nav-tabs style-tabs" style="margin-right:0px;min-width:155px;min-height:360px;">
+					<li class="active style_color data_gotted"><a href="#bcccolorpicker">Color</a></li>
+                    <li class="style_layout_dimension"><a href="#bcclayoutdimensions">Layout &amp; Dimensions</a></li>
+                    <li class="style_font"><a href="#bccfontproperties">Font</a></li>
+                    <li class="style_border"><a href="#bccborderproperties">Border</a></li>
+                    <li class="style_round_corner"><a href="#bccroundcorners">Round Corner</a></li>
+                    <li class="style_shadow"><a href="#bccshadowproperties">Shadow</a></li>
+                    <li class="style_background"><a href="#bccbackgroundproperties" class="">Background</a></li>
+                    <li class="style_list"><a href="#bcclistproperties">List</a></li>
+                    <li class="style_link"><a href="#bcclinkproperties">Link</a></li>
+                </ul>
+                <div class="tab-content">
+                	<div class="l bccmodalstylebody">
+                		<div class="bcccolorpicker bccstyleoptioncontainer">
+                            <div class="bcccolorpickercontainer"></div>
+                            <input type="hidden" name="text_color_style_val" value="#333333" />
+                        </div>
+                    </div>
+                    <div class="bccstylepreview">
+                        <div class="bccpreviewblock">
+                            <h4>Preview</h4>
+                            <div class="bccpreviewblockcontent">
+                            	<span>Text Goes Here!!!</span>
+                                <ul class="hide">
+                                	<li>BCC Editor</li>
+                                    <li>Argentina</li>
+                                </ul>
+                                <a href="" class="hide">Sample Text!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    	</div>
+       <div class="modal-footer c">
+            <a href="#" class="btn btn-warning">Save changes</a>
+             <a href="#" class="btn cancel_action" data-dismiss="modal">Close</a>
+        </div>
+      </div>
+
+<script src="js/bootstrap-modal.js" language="javascript" type="text/javascript"></script>
+<script src="js/bootstrap-tab.js" language="javascript" type="text/javascript"></script>
+<script src="js/bootstrap-dropdown.js" language="javascript" type="text/javascript"></script>
+<script src="js/jquery-ui-1.8.22.custom.min.js" language="javascript" type="text/javascript"></script>
+<script src="jpicker-1.1.6/jpicker-1.1.6.js" language="javascript" type="text/javascript"></script>
+<script src="js/wColorPicker.js" language="javascript" type="text/javascript"></script>
+<script src="js/main-editor.js" language="javascript" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+DrawModalInMiddle("#myModal");
+</script>
+</body>
+</html>

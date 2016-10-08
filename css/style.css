@@ -1,0 +1,840 @@
+/*!
+ * BCC Editor V1.0
+ *
+ * 
+ * Designed and built to Bayt.com - BCC by @islamzatary.
+ *
+ */
+
+/**** Styling fullscreen ****/
+html:fullscreen {
+    background: #FFF;
+}
+html:-moz-full-screen {
+    background: #FFF;
+}
+
+html:-webkit-full-screen {
+    background: #FFF;
+}
+h1 {
+	font-size:22px;
+}
+h2 {
+	font-size:18px;
+}
+h3 {
+	font-size:14px;
+}
+h4 {
+	margin:0 0 10px 0;
+}
+div {
+	border:0;
+}
+iframe {
+	border:0;
+	padding:0;
+	margin:0;
+	min-height:100%;
+}
+#bccwrap {
+	height: auto;
+    min-height: 100%;
+    position: relative;
+    width: 100%;
+}
+a {
+	color:#6E6E6E;
+	outline:none;
+}
+a:hover {
+	outline:none;
+}
+.l, #ar .r {
+	float:left;
+}
+.r, #ar .l {
+	float:right;
+}
+#bccheader {
+	padding:10px;
+	height:30px;
+}
+ul {
+	list-style:none;
+	margin:0;
+}
+select, input, textarea {
+	border-radius:0 !important;
+}
+select, input[type="file"] {
+	margin-bottom:8px;
+	padding:2px;
+	height:25px;
+}
+.bccmodalstylebody input {
+	text-align:center;
+	padding:2px;
+}
+.tabs-left > .nav-tabs > li > a {
+	border-radius:0;
+}
+.menu-h {
+	margin:0 0 0 10px;
+}
+#ar .menu-h {
+	margin:0 10px 0 0;
+}
+.menu-h li {
+	float: left;
+    font-size: 0.9em;
+    line-height: 1.8em;
+    padding: 0 5px;
+}
+#ar .menu-h li {
+	float:right;
+}
+#bccbody {
+	min-height:750px;
+	height:100%;
+	border-width:0 3px;
+}
+.bccbody_editor {
+	margin:0 246px 0 125px;
+	border:1px solid #8C8B7B;
+}
+.bccbodycontent {
+	padding:20px;
+}
+#bcclogo {
+	display:inline-block;
+	background:#6E6E6E;
+	border-radius:10px;
+	width:20px;
+	height:20px;
+}
+.bccgradienthdr, .bcctoolboxtitle {
+	height:22px;
+	line-height:17px;
+	background: url("../img/topbg.png") repeat-x 0 0;
+	color:#FFF;
+	font-size:12px;
+	padding:5px 0 5px 10px;
+}
+.bcctoolboxtitle {
+	padding:0 0 0 10px;
+	line-height:28px;
+	height:32px;
+}
+#bcctoolbox {
+	background:#FFF;
+	width:124px;
+	border-right:1px solid #FFFFFF;
+	position:absolute;
+	*left:0;
+}
+#bccproperties {
+	border-left: 1px solid #FFFFFF;
+    margin-top: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 245px;
+	background:#FFF;
+}
+.bcctoolboxtitle span {
+	background:#4D4C43;
+	display:inline-block;
+	padding:8px;
+	padding:6px\0/;
+	*float:none;
+}
+.bccexpandecollapse {
+
+}
+.icon-chevron-right, .icon-chevron-left, .icon-chevron-up, .icon-chevron-down, .icon-fullscreen {
+	cursor:pointer;
+}
+.bccmodalstylebody {
+	min-width:535px;
+}
+.bccmodalstylebody, .bccmodalstylelist {
+	min-height:220px;
+}
+.bccmodalstylebody, .bccblockcontent {
+	padding:10px 20px;
+}
+.bccmodalstylelist {
+	width:140px;
+	border-right:1px solid #CCC;
+}
+.vrmenulist li {
+	padding:7px 6px;
+
+}
+.vrmenulist li a {
+	text-decoration:none;
+}
+.vrmenulist li a {
+	color:#999999;
+}
+.vrmenulist li.on a {
+	color:#333333;
+}
+.bccstyleproperties .on {
+	background:#EFEEEB;
+}
+.modal-header {
+	background:#E8E7E1;
+	padding:5px 10px;
+}
+.modal {
+	width:772px;
+	margin:0;
+	/*margin:-290px 0 0 -390px;*/
+	position:absolute;
+	/*top:290px;*/
+	left:25%;
+	top:10%;
+	border-radius:0;
+}
+.bccbodyhometemplatecontent .tab-content {
+	padding-bottom:10px;
+}
+.bccsitelayoutheaderproperties {
+	width:470px;
+}
+.bccsitelayoutheaderproperties input {
+	width:30px;
+}
+.bccsitelayoutheaderproperties select {
+	width:50px;
+}
+.bccsitelayoutheaderproperties span.bccsiteposition, .bccsitelayoutheaderproperties span.bccsiteposition span, .bccsitepropertiespositionalign span.bccsiteposition, .bccsitepropertiespositionalign span.bccsiteposition span {
+	border:1px solid #999;
+	display:inline-block;
+	padding:5px;
+}
+.bccsitelayoutheaderproperties span.bccsiteposition span, .bccsitepropertiespositionalign span.bccsiteposition span {
+	cursor:pointer;
+	line-height:8px;
+	height:8px;
+	width:8px;
+}
+.bccsitelayoutheaderproperties span.bccsiteposition .on, .bccsitelayoutheaderproperties span.bccsiteposition span:hover, .bccsitepropertiespositionalign span.bccsiteposition .on, .bccsitepropertiespositionalign span.bccsiteposition span:hover {
+	border:1px solid #06A1E6;
+	color:#06A1E6;
+}
+.tab_spacing_list {
+	margin:0;
+}
+.tab_spacing_content {
+	border:1px solid #DDD;
+	border-width:0 1px 1px 1px;
+	padding:10px;
+}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .tab_spacing_content {
+	background-color:#F6F6F6;
+}
+.bccspacingview, .bccborderblock {
+	 margin: 0 auto;
+    padding: 28px;
+    position: relative;
+    width: 110px;
+}
+.bccspacingview span, .bccborderblock span {
+	display:inline-block;
+}
+.bccspacingview input, .bccborderblock input {
+	height: 13px;
+    margin: 0;
+    width: 20px;
+	text-align:center;
+}
+.modal-footer {
+	border:none;
+	padding:10px;
+}
+.bccstylepreview {
+	clear: both;
+    min-height: 120px;
+    min-width: 450px;
+	padding:0 20px;
+}
+.bccpreviewblock {
+	padding:10px;
+	border:1px dotted #CCC;
+	min-height:100px;
+	min-width:430px;
+	overflow:auto;
+}
+.bccpreviewblock h4 {
+	color:#999;
+	text-align:left;
+}
+.bccsitelayoutheaderproperties, .bccsitespacingproperties {
+	margin:0 0 15px 0;
+}
+.modal-body {
+	max-height:475px;
+	padding:15px 20px;
+}
+.tabs-left .nav-tabs > .active > a {
+	background-color:#FFF;
+	font-weight:bold;
+}
+.tabs-left > .nav-tabs > li > a, .tabs-right > .nav-tabs > li > a {
+	margin-bottom:0;
+}
+.nav-tabs > li > a, .nav-tabs > li > a, .nav-pills > li > a {
+	padding:10px;
+}
+
+/*** Link Hover Options ***/
+.link_hover_bold:hover {
+	font-weight:bold;
+}
+.link_hover_gray:hover {
+	color:#666666 !important;
+}
+.link_hover_blue:hover {
+	color:#06F06F !important;
+}
+
+.link_hover_remove_decoration:hover {
+	text-decoration:none;
+}
+/*** Add sprite images ***/
+.icon-underline {
+	background-position:0px -169px;
+}
+.icon-strike, .icon-line-through {
+	background-position:-24px -169px;
+}
+/*** End Sprite ***/
+
+/******** Unorder List Images BG ***********/
+ul.blt_1 li, ul.blt_2 li, ul.blt_3 li, ul.blt_4 li, ul.blt_5 li {
+	padding:0 0 0 20px;
+}
+ul.blt_1 li {
+	background:url("../img/blt/blt_1.png") no-repeat;
+}
+ul.blt_2 li {
+	background:url("../img/blt/blt_2.png") no-repeat;
+}
+ul.blt_3 li {
+	background:url("../img/blt/blt_3.png") no-repeat;
+}
+ul.blt_4 li {
+	background:url("../img/blt/blt_4.png") no-repeat;
+}
+ul.blt_5 li {
+	background:url("../img/blt/blt_5.png") no-repeat;
+}
+
+/**** Bootstrap Override ****/
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .tab_spacing_content {
+	background-color:#FFF;
+	color:#000;
+}
+.nav-tabs a, .nav-tabs a:hover {
+	font-weight:bold;
+}
+.bcctemplatecontainer {
+	  overflow:hidden;
+	  min-height:400px;
+	  padding:40px 0 0 0;
+}
+.bcctemplateblock {
+	background:#FFF;
+	float:left;
+	margin:0 10px 0 0;
+	padding:80px;
+	border:3px solid #DDD;
+	position:relative;
+	cursor:pointer;
+	display:block;
+}
+.bcctemplateblock.active {
+	border:3px solid #666;	
+}
+.bcctemplateblock .icon-zoom-in {
+	bottom: 0;
+    position: absolute;
+    right: 0;
+}
+/****   ****/
+
+.bccicon-block {
+	cursor:pointer;
+	background:none repeat scroll 0 0 #EFEFEF;
+    display:inline-block;
+    padding:5px;
+	margin-right:5px;
+	border:1px solid #FFF;
+}
+.bccicon-block.active {
+	border: 1px solid #CCCCCC;
+}
+.bccfontpropertiesheader select {
+	width:65px;
+	margin:0 5px 0 0;
+	vertical-align:top;
+	height:25px;
+	padding:2px;
+}
+.bottom-dotted-border {
+	border-bottom:1px dotted #CCC;
+	overflow:hidden;
+	padding:0 0 10px 0;
+	margin:0 0 10px 0;
+}
+.bccblocksfield-cols {
+	float:left;
+	width:48%;
+} 
+.bccblocksfield-cols input, .bccblocksfield-cols select {
+	width:50%;
+}
+.bccblocksfield-cols label {
+	display:inline-block;
+	width:40%;
+}
+.bccblocksfield-rows {}
+
+.title_free_toggle {
+	padding:5px;
+	background:#F1F1F1;
+	font-size:12px;
+}
+.bccwidgetlinks li {
+	padding:4px 0;
+}
+
+.text_shadow_slider input, .bccroundcornerscontainer input {
+	width:20px;
+	margin:0 1px;
+}
+.clear {
+	clear:both;
+}
+.c {
+	text-align:center;
+}
+.bccblockmarginbottom {
+
+}
+.bccbodyhometemplate h2 {
+	background:#EFEEEB;
+    font-size:1.3em;
+    line-height:1.2em;
+    padding:17px 20px;
+}
+.bccbodyhometemplate {
+	border:1px solid #CCC;
+}
+.bccbodyhometemplatecontent {
+	padding:20px;
+}
+
+
+/*****  Fieldset ********/
+fieldset {
+    clear: both;
+}
+fieldset > div {
+    float: left;
+    width: 100%;
+}
+fieldset div h4 {
+    color: #666;
+    float: left;
+    font-weight: normal;
+    width: 27%;
+	font-size:1em;
+	margin-bottom:10px;
+}
+fieldset > div > p, fieldset > div > dl, fieldset > div > ul, fieldset > div > div  {
+    color: #888888;
+    float: left;
+    margin: 0;
+    padding: 0 0 0 2%;
+    width: 68%;
+}
+.bcclinkpropertiescontainer {
+	overflow:hidden;
+}
+.bcclinkpropertiescontainer input[type="text"], .bcclinkpropertiescontainer select {
+	width:80%;
+}
+
+/********* Site Properties Style *********/
+fieldset.bccsitepropertiesblock input, fieldset.bccsitepropertiesblock select {
+	margin:0;
+}
+fieldset.bccsitepropertiesblock h4, fieldset.bccsitepropertiesblock p {
+	margin:0;
+	line-height:28px;
+}
+fieldset.bccsitepropertiesblock input {
+	width:20%;
+}
+fieldset.bccsitepropertiesblock select {
+	width:40%;
+}
+fieldset.bccsitepropertiesblock > div {
+	border-bottom:1px dotted #CCC;
+	overflow:hidden;
+	padding:0 0 10px 0;
+	margin:0 0 10px 0;
+}
+fieldset.bccsitepropertiesblock div h4 {
+	width:36%;
+}
+fieldset.bccsitepropertiesblock div p, fieldset.bccsitepropertiesblock div dl, fieldset.bccsitepropertiesblock div ul, fieldset.bccsitepropertiesblock div div {
+	width:60%;
+}
+.bcciconbg {
+	background:#EDEDED;
+	padding:6px;
+	display:inline-block;
+}
+fieldset.bccsitepropertiesblock .rows2 h4, fieldset.bccsitepropertiesblock .rows2 > div {
+	width:auto;
+	padding:0 6px;
+	float:none;
+}
+fieldset.bccsitepropertiesblock .rows2 h4 {
+	background:#EDEDED;
+	display:inline-block;
+	margin:0 0 10px 0;
+}
+.bccsitepropertiescontainer {
+	max-height:470px;
+	overflow:auto;
+}
+.color_block {
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+	vertical-align:text-top;
+	margin:0 2px 2px 2px;
+	cursor:pointer;
+}
+.choose_color_template {
+	border:1px solid #CCC;
+	padding:3px 5px;
+	margin:0 0 7px 0;
+	color:#999;
+	position:absolute;
+	width:132px;
+	z-index:9999;
+}
+.choose_others_color_template {
+	background:#FFFFFF;
+    border:1px solid #CCCCCC;
+    left:0;
+    margin:3px -1px 0;
+    padding:5px 10px;
+    position:absolute;
+    width:122px;
+    z-index:999;
+}
+.color_block_blue {
+	background:#007DC3;
+}
+.color_block_springgreen {
+	background:#00A19A;
+}
+.color_block_yellow {
+	background:#FCDD10;
+}
+.color_block_orange {
+	background:#F39C38;
+}
+.color_block_red {
+	background:#F02B37;
+}
+.color_block_dark_gray {
+	background:#3C3C3B;
+}
+.color_block_green {
+	background:#4AAA46;
+}
+.color_block_pink {
+	background:#FF3D90;
+}
+.color_block_gray {
+	background:#A4948B;
+}
+.color_block_violet {
+	background:#995DB3;
+}
+/****** Jpicker style *****/
+
+#jPicker { margin: 0px 8px; text-align: left; }
+#jPicker ul { font-size: 15px; margin: 0px 0px 0px 15px; padding: 0px; }
+#jPicker ul li { list-style: disc; padding: 2px 0px; }
+#jPicker ul li ul { margin-bottom: 10px; }
+#jPicker ul li ul li { list-style: circle; }
+#jPicker p { font-size: 13px; padding: 0px 10px; }
+#jPicker hr { clear: both; }
+#jPicker h2.jPicker { font-size: 16px; padding: 20px 10px; }
+#jPicker code { color: #8bd; font-size: 14px; font-weight: bold; }
+#jPicker pre { background: #eee; border: 1px solid #000; color: #000; display: block; font-size: 11px; margin: 10px 5px; padding: 5px; }
+#jPicker span { font-size: 13px; text-align: center; }
+#jPicker a { color: #ff8050; }
+#jPicker input { font-size: 13px; padding: 2px 5px; }
+#jPicker h2 { font-size: 16px; margin: 10px 0px; }
+.jPicker .Icon {
+  display: inline-block;
+  height: 24px; /* change this value if using a different sized color picker icon */
+  position: relative; /* make this element an absolute positioning container */
+  text-align: left; /* make the zero width children position to the left of container */
+  width: 25px; /* change this value if using a different sized color picker icon */
+  margin-bottom:10px;
+}
+.jPicker .Icon span.Color, .jPicker .Icon span.Alpha {
+  background-position: 2px 2px;
+  display: block;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.jPicker .Icon span.Image {
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.jPicker.Container {
+  color: #000;
+  z-index: 9999 !important;
+  margin:0 0 5px 0;
+}
+table.jPicker {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 12px !important;
+  margin: 0px;
+  padding: 5px;
+  /*width: 545px;*/
+  z-index: 20;
+  background:#FFF;
+  border-radius:5px;
+}
+.jPicker.jpicker_expandable {
+	box-shadow:4px 3px 7px #CCCCCC;
+	background:#F1F1F1;
+}
+.expandable_container {
+	padding:0 10px;
+}
+.jPicker .Move {
+  background-color: #dddddd;
+  border-color: #fff #666 #666 #fff;
+  border-style: solid;
+  border-width: 1px;
+  cursor: move;
+  height: 12px;
+  padding: 0px;
+}
+.jPicker .Title {
+  font-size: 11px !important;
+  font-weight: bold;
+  margin: -2px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
+  text-align: center;
+  width: 100%;
+}
+.jPicker div.Map {
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #9a9a9a;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #9a9a9a;
+  cursor: crosshair;
+  height: 260px; /* IE 6 incorrectly draws border inside the width and height instead of outside - We will fix this to 256px later */
+  margin: 0;
+  overflow: hidden; /* hide the overdraw of the Color Map icon when at edge of viewing box */
+  padding: 0px;
+  position: relative; /* make this element an absolute positioning container */
+  width: 260px; /* IE 6 incorrectly draws border inside the width and height instead of outside - We will fix this to 256px later */
+}
+.cancel_img i {
+	cursor:pointer;
+}
+.jPicker div[class="Map"] {
+  height: 120px; /* correct to 256px for browsers that support the "[class="xxx"]" selector (IE7+,Firefox,Safari,Chrome,Opera,etc.) */
+  width: 120px; /* correct to 256px for browsers that support the "[class="xxx"]" selector (IE7+,Firefox,Safari,Chrome,Opera,etc.) */
+}
+.jPicker div.Bar {
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #9a9a9a;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #9a9a9a;
+  cursor: n-resize;
+  height: 260px; /* IE 6 incorrectly draws border inside the width and height instead of outside - We will fix this to 256px later */
+  margin: 0 35px 0px 10px;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 24px; /* IE 6 incorrectly draws border inside the width and height instead of outside - We will fix this to 20px later */
+}
+.jPicker div[class="Bar"] {
+  height: 120px; /* correct to 256px for browsers that support the "[class="xxx"]" selector (IE7+,Firefox,Safari,Chrome,Opera,etc.) */
+  width: 20px; /* correct to 20px for browsers that support the "[class="xxx"]" selector (IE7+,Firefox,Safari,Chrome,Opera,etc.) */
+}
+.jPicker .Map .Map1, .jPicker .Map .Map2, .jPicker .Map .Map3, .jPicker .Bar .Map1, .jPicker .Bar .Map2, .jPicker .Bar .Map3, .jPicker .Bar .Map4, .jPicker .Bar .Map5, .jPicker .Bar .Map6 {
+  background-color: transparent;
+  background-image: none;
+  display: block;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+}
+.jPicker .Map .Map1, .jPicker .Map .Map2, .jPicker .Map .Map3 {
+  height: 1221px;
+  width: 120px; /* must specify pixel width. IE7/8 Quirks mode ignores opacity for an absolutely positioned item in a relative container with "overflow: visible". The marker in the colorBar
+                   would not be drawn if its overflow is set to hidden. */
+}
+.jPicker .Bar .Map1, .jPicker .Bar .Map2, .jPicker .Bar .Map3, .jPicker .Bar .Map4 {
+  height: 3896px;
+  width: 20px; /* must specify pixel width. IE7/8 Quirks mode ignores opacity for an absolutely positioned item in a relative container with "overflow: visible". The marker in the colorBar
+                  would not be drawn if its overflow is set to hidden. */
+}
+.jPicker .Bar .Map5, .jPicker .Bar .Map6 {
+  height: 256px;
+  width: 20px; /* must specify pixel width. IE7/8 Quirks mode ignores opacity for an absolutely positioned item in a relative container with "overflow: visible". The marker in the colorBar
+                  would not be drawn if its overflow is set to hidden. */
+}
+.jPicker .Map .Map1, .jPicker .Map .Map2, .jPicker .Bar .Map6 {
+  background-repeat: no-repeat;
+}
+.jPicker .Map .Map3, .jPicker .Bar .Map5 {
+  background-repeat: repeat;
+}
+.jPicker .Bar .Map1, .jPicker .Bar .Map2, .jPicker .Bar .Map3, .jPicker .Bar .Map4 {
+  background-repeat: repeat-x;
+}
+.jPicker .Map .Arrow {
+  display: block;
+  position: absolute;
+}
+.jPicker .Bar .Arrow {
+  display: block;
+  left: 0px; /* (arrow width / 2) - (element width / 2) - position arrows' center in elements' center */
+  position: absolute;
+}
+.jPicker .Preview {
+  font-size: 9px;
+  padding:0;
+  text-align: center;
+  height:144px;
+}
+.jPicker .Preview label {
+	font-size: 9px;
+	width:72px;	
+}
+.jPicker .Preview div {
+  border: 1px solid #eee;
+  height: 70px;
+  padding: 0px;
+  width: 70px;
+}
+.jPicker .Preview div span {
+  display: block;
+  height: 70px;
+  margin: 0px auto;
+  padding: 0px;
+  width: 70px;
+}
+.jPicker .Preview .Active {
+  border-bottom-width: 0px;
+}
+.jPicker .Preview .Current {
+  border-top-width: 0px;
+  cursor: pointer;
+}
+.jPicker input {
+  font-size: 13px;
+}
+.jPicker .Button {
+  text-align: center;
+  padding: 15px 4px;
+  width: 115px;
+  vertical-align:top;
+}
+.jPicker .Button input {
+  padding: 2px 0px;
+  width: 100px;
+}
+.jPicker .Button .Ok {
+  margin: 12px 0px 5px 0px;
+}
+.jPicker td {
+  margin: 0px;
+  padding: 0px;
+}
+.jPicker td.Radio {
+  margin: 0px;
+  padding: 0px;
+  width: 31px;
+}
+.jPicker td.Radio input {
+  margin: 0px 5px 0px 0px;
+  padding: 0px;
+}
+.jPicker td.Text {
+  font-size: 12px !important;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  width: 70px;
+}
+.jPicker tr.Hex td.Text {
+  width: 100px;
+}
+.jPicker td.Text input {
+  background-color: #fff;
+  border: 1px inset #aaa;
+  height: 19px;
+  margin: 5px 0px 0px 5px;
+  text-align: left;
+  width: 30px;
+}
+.jPicker td[class="Text"] input {
+  height: 15px;
+}
+.jPicker tr.Hex td.Text input.Hex {
+  width: 50px;
+}
+.jPicker tr.Hex td.Text input.AHex {
+  width: 20px;
+}
+.jPicker .Grid {
+  text-align: center;
+  width: 144px;
+}
+.jPicker .Grid span.QuickColor {
+  border: 1px inset #aaa;
+  cursor: pointer;
+  display: inline-block;
+  height: 14px;
+  line-height: 14px;
+  margin: 0px;
+  padding: 0px;
+}
+.jPicker .Grid span[class="QuickColor"] {
+  width: 14px;
+}
+.picker_preview_title, .jPicker .Preview {
+	padding:0 0 0 35px !important;
+}
+/************* End Jpicker style ***********/

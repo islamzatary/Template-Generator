@@ -1,0 +1,9 @@
+*Production
+sms production:
+
+adminsms
+t4q4T8dm1n
+
+*/developement
+adminsms
+admin1212

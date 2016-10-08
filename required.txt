@@ -1,0 +1,5 @@
+1. ajax modal tabs. done
+2. preview.
+3. cross browsers. done.
+4. validator done. done.
+5. resizable. done

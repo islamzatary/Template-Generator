@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="img/favicon.ico" />
+<link type="text/css" rel="stylesheet" href="css/bootstrap.css" media="all"/>
+<link type="text/css" rel="stylesheet" href="css/style.css" media="all"/>
+<link type="text/css" rel="stylesheet" href="css/jqueryUI/jquery-ui-1.8.22.custom.css" media="all"/>
+<script src="js/jquery.v1.7.1.js" type="text/javascript" language="javascript"></script>
+<title>BCC - Template Selector</title>
+</head>
+<body id="en">
+	<div id="bccwrap">
+    	<div id="bccheader">
+        	<div class="l">
+            	<span id="bcclogo" class="l"></span>
+                <ul class="menu-h l">
+                	<li><a data-toggle="modal" href="#myModal">Insert Widget</a></li>
+                	<li><a href="#">Site Settings</a></li>
+                </ul>
+            </div>
+            <div class="r">
+            	<a href="javascript:;" title="View FullScreen" class="btn fullscreen"><i class="icon-fullscreen"></i> View FullScreen</a>
+            	<button class="btn">Preview</button>
+                <button class="btn btn-warning">Save</button>
+                <button class="btn btn-warning">Publish to Production</button>
+            </div>
+        </div>
+        
+        <div id="bccbody">
+        	<h3 class="bccgradienthdr"></h3>
+            <div class="bccbodycontent">
+            	<div class="bccbodyhometemplate">
+                	<h2>Select Homepage Template</h2>
+                    <div class="bccbodyhometemplatecontent">
+                        <div class="tabbable"> <!-- Only required for left/right tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#tab1" data-toggle="tab" class="ready_template">Ready Template</a></li>
+                                <li><a href="#tab2" data-toggle="tab" class="blank_template">Blank Template</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tab1" style="width:2440px;overflow:hidden;">
+                                	<div class="choose_color_template">
+                                    	Choose Color&nbsp;&nbsp;<i class="color_block color_block_blue active"></i> <i class="icon-chevron-down"></i>
+                                        						<input type="hidden" name="active_color_val" value="color_block_blue" />
+                                        <div class="choose_others_color_template hide">
+                                            <i class="color_block color_block_red"></i>
+                                            <i class="color_block color_block_dark_gray"></i>
+                                            <i class="color_block color_block_yellow"></i>
+                                            <i class="color_block color_block_green"></i>
+                                            <i class="color_block color_block_blue"></i>
+                                            <i class="color_block color_block_pink"></i>
+                                            <i class="color_block color_block_orange"></i>
+                                            <i class="color_block color_block_gray"></i>
+                                            <i class="color_block color_block_violet"></i>
+                                            <i class="color_block color_block_springgreen"></i>
+                                        </div>
+                                    </div>
+                                    <div class="bcctemplatecontainer">
+                                        <div class="bcctemplateblock active">
+                                            <img src="img/ready_templates/default/ready_template_1.jpg" alt="Template 1" width="285" height="225" />
+                                            <a href="#chooseTemplate" data-toggle="modal" data-modaloption="default/ready_template_1_large.jpg" class="icon-zoom-in"></a>
+                                        </div>
+                                         <div class="bcctemplateblock">
+                                            <img src="img/ready_templates/default/ready_template_2.jpg" alt="Template 2" width="285" height="225" />
+                                            <a href="#chooseTemplate" data-toggle="modal" data-modaloption="default/ready_template_1_large.jpg" class="icon-zoom-in"></a>
+                                        </div>
+                                         <div class="bcctemplateblock">
+                                            <img src="img/ready_templates/default/ready_template_1.jpg" alt="Template 1" width="285" height="225" />
+                                            <a href="#chooseTemplate" data-toggle="modal" data-modaloption="default/ready_template_1_large.jpg" class="icon-zoom-in"></a>
+                                         </div>
+                                        <div class="bcctemplateblock">
+                                            <img src="img/ready_templates/default/ready_template_1.jpg" alt="Template 1" width="285" height="225" />
+                                            <a href="#chooseTemplate" data-toggle="modal" data-modaloption="default/ready_template_1_large.jpg" class="icon-zoom-in"></a>
+                                        </div>
+                                        <div class="bcctemplateblock">
+                                            <img src="img/ready_templates/default/ready_template_1.jpg" alt="Template 1" width="285" height="225" />
+                                            <a href="#chooseTemplate" data-toggle="modal" data-modaloption="default/ready_template_1_large.jpg" class="icon-zoom-in"></a>
+                                        </div>
+                                     </div>
+                                </div>
+                                <div class="tab-pane" id="tab2" style="overflow-x:scroll;"> 
+                                    <div class="bcctemplateblock active">
+                                    	<img src="img/ready_templates/blank_template_1.jpg" alt="Blank Template 1" width="285" height="225" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="margin:10px 0;"><button class="btn btn-warning" onclick="goto_bcceditor();">Create Site</button></p>
+                    </div><!-- End bccbodyhometemplatecontent -->
+                </div>
+            </div>
+        </div>
+         
+    </div>
+    <!-- Modal -->
+    <div class="modal hide" id="chooseTemplate">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h3>Preview</h3>
+        </div>
+        <div class="modal-body c" style="max-height:520px;"></div>
+    </div>
+<script src="js/bootstrap-modal.js" language="javascript" type="text/javascript"></script>
+<script src="js/bootstrap-tab.js" language="javascript" type="text/javascript"></script>
+<script src="js/bootstrap-dropdown.js" language="javascript" type="text/javascript"></script>
+<script src="js/jquery-ui-1.8.22.custom.min.js" language="javascript" type="text/javascript"></script>
+<script src="js/main-editor.js" language="javascript" type="text/javascript"></script>
+<script src="jpicker-1.1.6/jpicker-1.1.6.js" language="javascript" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+$(document).ready(function(){
+	$(".bcctemplateblock a.icon-zoom-in").click(function(){
+		var templateImgLarge = $(this).data("modaloption");
+		if ( templateImgLarge ) {
+			$("#chooseTemplate .modal-body").html("<img src='img/ready_templates/"+templateImgLarge+"' width='640' height='515' alt='' />");
+			DrawModalInMiddle("#chooseTemplate");		
+		}
+	});
+	$(".bcctemplateblock").click(function(){
+		$(".bcctemplateblock").removeClass("active");
+		$(this).addClass("active");
+	});
+	$(".choose_color_template").hover(function(){
+		$(".choose_others_color_template").toggle();
+	});
+	$(".choose_others_color_template .color_block").click(function(){
+		var reps = {
+		  color_block: " ",
+		  active: " "
+		};
+		var color_choosed = $(this).attr("class").replace(/(\w+)/g, function(s, key) {return reps[key] || s;}).trim();
+		var color_actived = $(".color_block.active").attr("class").replace(/(\w+)/g, function(s, key) {return reps[key] || s;}).trim();
+		$("input[name='active_color_val']").val(" ");
+		$("input[name='active_color_val']").val(""+color_choosed+"");
+		$(".color_block.active").removeClass(""+color_actived+"").addClass(""+color_choosed+"");
+		
+		function onSuccess(data, status){
+			console.log(data+">>>>>>>>>>>");
+			$(".bcctemplatecontainer").html(data);
+			return true;
+		}
+		function onError(data, status){
+		   console.log("error Ajax"+data);
+		   return false;
+		}
+		$.ajaxSetup({async: false});
+		$.ajax({
+			type: "POST",
+			url: "modal_property_manager.php",
+			data: 'template_chooser='+color_choosed,
+			dataType: "html",
+			success: onSuccess,
+			error: onError
+		});
+		$.ajaxSetup({async: true});
+	});
+	
+});
+function goto_bcceditor() {
+	var template_type = $(".bccbodyhometemplatecontent .tabbable .nav-tabs li.active a").attr("class");
+	var template_ready_color = $("input[name='active_color_val']").val().replace("color_block_","");
+	if ( template_type == "blank_template" ) {
+		template_ready_color = "";
+	} else {
+		template_ready_color = "&template_ready_color="+template_ready_color;
+	}
+	return window.location='index.html?template_type='+template_type+template_ready_color;	
+}
+</script>
+</body>
+</html>
